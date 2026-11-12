@@ -1,0 +1,20 @@
+Animation source: PC2005-cloud/dsh-pet
+https://github.com/PC2005-cloud/dsh-pet
+Original files and Git blob hashes are recorded in actions.json.
+
+The upstream project identifies the character/artwork license as CC BY-NC-SA 4.0
+(Attribution, NonCommercial, ShareAlike):
+https://creativecommons.org/licenses/by-nc-sa/4.0/
+Upstream code is MIT; that does not replace the artwork license.
+
+Character origin: Mingyue by Bilibili @上善无形.
+DeepSeek whale-maid design: Bilibili @ZipZipPipe.
+Animation author/project: PC2005-cloud/dsh-pet.
+These converted animations are for the owner's personal, noncommercial ESP32 pet.
+Keep attribution and the same artwork license when sharing converted assets.
+
+Historical PNG/GIF assets and generated RGB565 data under legacy/rgb565 originate
+from luweiyabo/dsh-whale-pet:
+https://github.com/luweiyabo/dsh-whale-pet
+They use the same community character; keep the CC BY-NC-SA 4.0 attribution and
+noncommercial/share-alike terms for these materials as well.

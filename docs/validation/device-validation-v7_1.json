@@ -1,0 +1,499 @@
+﻿{
+    "port":  "COM4",
+    "revision":  "7.1-fixed-camera",
+    "result":  "PASS",
+    "actions":  30,
+    "rendered_frames":  3600,
+    "balance_ready":  true,
+    "cycles":  [
+                   {
+                       "index":  0,
+                       "id":  "lion",
+                       "rendered":  120,
+                       "total":  120,
+                       "elapsed_ms":  10040,
+                       "target_ms":  10040,
+                       "max_render_ms":  34,
+                       "errors":  0
+                   },
+                   {
+                       "index":  1,
+                       "id":  "idle",
+                       "rendered":  120,
+                       "total":  120,
+                       "elapsed_ms":  10040,
+                       "target_ms":  10040,
+                       "max_render_ms":  33,
+                       "errors":  0
+                   },
+                   {
+                       "index":  2,
+                       "id":  "happy",
+                       "rendered":  120,
+                       "total":  120,
+                       "elapsed_ms":  10040,
+                       "target_ms":  10040,
+                       "max_render_ms":  34,
+                       "errors":  0
+                   },
+                   {
+                       "index":  3,
+                       "id":  "sleep",
+                       "rendered":  120,
+                       "total":  120,
+                       "elapsed_ms":  10040,
+                       "target_ms":  10040,
+                       "max_render_ms":  37,
+                       "errors":  0
+                   },
+                   {
+                       "index":  4,
+                       "id":  "alert",
+                       "rendered":  120,
+                       "total":  120,
+                       "elapsed_ms":  10040,
+                       "target_ms":  10040,
+                       "max_render_ms":  33,
+                       "errors":  0
+                   },
+                   {
+                       "index":  5,
+                       "id":  "cube",
+                       "rendered":  120,
+                       "total":  120,
+                       "elapsed_ms":  10040,
+                       "target_ms":  10040,
+                       "max_render_ms":  33,
+                       "errors":  0
+                   },
+                   {
+                       "index":  6,
+                       "id":  "hotpot",
+                       "rendered":  120,
+                       "total":  120,
+                       "elapsed_ms":  10040,
+                       "target_ms":  10040,
+                       "max_render_ms":  33,
+                       "errors":  0
+                   },
+                   {
+                       "index":  7,
+                       "id":  "blue_whale",
+                       "rendered":  120,
+                       "total":  120,
+                       "elapsed_ms":  10040,
+                       "target_ms":  10040,
+                       "max_render_ms":  33,
+                       "errors":  0
+                   },
+                   {
+                       "index":  8,
+                       "id":  "otaku_dance",
+                       "rendered":  120,
+                       "total":  120,
+                       "elapsed_ms":  10040,
+                       "target_ms":  10040,
+                       "max_render_ms":  33,
+                       "errors":  0
+                   },
+                   {
+                       "index":  9,
+                       "id":  "maid_dance",
+                       "rendered":  120,
+                       "total":  120,
+                       "elapsed_ms":  10040,
+                       "target_ms":  10040,
+                       "max_render_ms":  35,
+                       "errors":  0
+                   },
+                   {
+                       "index":  10,
+                       "id":  "swing_dance",
+                       "rendered":  120,
+                       "total":  120,
+                       "elapsed_ms":  10040,
+                       "target_ms":  10040,
+                       "max_render_ms":  33,
+                       "errors":  0
+                   },
+                   {
+                       "index":  11,
+                       "id":  "violin",
+                       "rendered":  120,
+                       "total":  120,
+                       "elapsed_ms":  10040,
+                       "target_ms":  10040,
+                       "max_render_ms":  33,
+                       "errors":  0
+                   },
+                   {
+                       "index":  12,
+                       "id":  "tail_drums",
+                       "rendered":  120,
+                       "total":  120,
+                       "elapsed_ms":  10040,
+                       "target_ms":  10040,
+                       "max_render_ms":  33,
+                       "errors":  0
+                   },
+                   {
+                       "index":  13,
+                       "id":  "spin",
+                       "rendered":  120,
+                       "total":  120,
+                       "elapsed_ms":  10040,
+                       "target_ms":  10040,
+                       "max_render_ms":  33,
+                       "errors":  0
+                   },
+                   {
+                       "index":  14,
+                       "id":  "pet_cat",
+                       "rendered":  120,
+                       "total":  120,
+                       "elapsed_ms":  10040,
+                       "target_ms":  10040,
+                       "max_render_ms":  33,
+                       "errors":  0
+                   },
+                   {
+                       "index":  15,
+                       "id":  "rocking_horse",
+                       "rendered":  120,
+                       "total":  120,
+                       "elapsed_ms":  10040,
+                       "target_ms":  10040,
+                       "max_render_ms":  40,
+                       "errors":  0
+                   },
+                   {
+                       "index":  16,
+                       "id":  "swing",
+                       "rendered":  120,
+                       "total":  120,
+                       "elapsed_ms":  10040,
+                       "target_ms":  10040,
+                       "max_render_ms":  33,
+                       "errors":  0
+                   },
+                   {
+                       "index":  17,
+                       "id":  "shuttlecock",
+                       "rendered":  120,
+                       "total":  120,
+                       "elapsed_ms":  10040,
+                       "target_ms":  10040,
+                       "max_render_ms":  33,
+                       "errors":  0
+                   },
+                   {
+                       "index":  18,
+                       "id":  "juggling",
+                       "rendered":  120,
+                       "total":  120,
+                       "elapsed_ms":  10040,
+                       "target_ms":  10040,
+                       "max_render_ms":  33,
+                       "errors":  0
+                   },
+                   {
+                       "index":  19,
+                       "id":  "card_magic",
+                       "rendered":  120,
+                       "total":  120,
+                       "elapsed_ms":  10040,
+                       "target_ms":  10040,
+                       "max_render_ms":  33,
+                       "errors":  0
+                   },
+                   {
+                       "index":  20,
+                       "id":  "gaming",
+                       "rendered":  120,
+                       "total":  120,
+                       "elapsed_ms":  10040,
+                       "target_ms":  10040,
+                       "max_render_ms":  33,
+                       "errors":  0
+                   },
+                   {
+                       "index":  21,
+                       "id":  "sneak_snack",
+                       "rendered":  120,
+                       "total":  120,
+                       "elapsed_ms":  10040,
+                       "target_ms":  10040,
+                       "max_render_ms":  38,
+                       "errors":  0
+                   },
+                   {
+                       "index":  22,
+                       "id":  "watermelon",
+                       "rendered":  120,
+                       "total":  120,
+                       "elapsed_ms":  10040,
+                       "target_ms":  10040,
+                       "max_render_ms":  33,
+                       "errors":  0
+                   },
+                   {
+                       "index":  23,
+                       "id":  "ghost",
+                       "rendered":  120,
+                       "total":  120,
+                       "elapsed_ms":  10040,
+                       "target_ms":  10040,
+                       "max_render_ms":  33,
+                       "errors":  0
+                   },
+                   {
+                       "index":  24,
+                       "id":  "gift",
+                       "rendered":  120,
+                       "total":  120,
+                       "elapsed_ms":  10040,
+                       "target_ms":  10040,
+                       "max_render_ms":  33,
+                       "errors":  0
+                   },
+                   {
+                       "index":  25,
+                       "id":  "pumpkin",
+                       "rendered":  120,
+                       "total":  120,
+                       "elapsed_ms":  10040,
+                       "target_ms":  10040,
+                       "max_render_ms":  33,
+                       "errors":  0
+                   },
+                   {
+                       "index":  26,
+                       "id":  "snowman",
+                       "rendered":  120,
+                       "total":  120,
+                       "elapsed_ms":  10040,
+                       "target_ms":  10040,
+                       "max_render_ms":  33,
+                       "errors":  0
+                   },
+                   {
+                       "index":  27,
+                       "id":  "red_envelope",
+                       "rendered":  120,
+                       "total":  120,
+                       "elapsed_ms":  10040,
+                       "target_ms":  10040,
+                       "max_render_ms":  38,
+                       "errors":  0
+                   },
+                   {
+                       "index":  28,
+                       "id":  "ice_cream",
+                       "rendered":  120,
+                       "total":  120,
+                       "elapsed_ms":  10040,
+                       "target_ms":  10040,
+                       "max_render_ms":  33,
+                       "errors":  0
+                   },
+                   {
+                       "index":  29,
+                       "id":  "fan",
+                       "rendered":  120,
+                       "total":  120,
+                       "elapsed_ms":  10040,
+                       "target_ms":  10040,
+                       "max_render_ms":  33,
+                       "errors":  0
+                   }
+               ],
+    "transitions":  [
+                        {
+                            "index":  0,
+                            "steps":  4,
+                            "elapsed_ms":  162,
+                            "max_step_ms":  14
+                        },
+                        {
+                            "index":  1,
+                            "steps":  4,
+                            "elapsed_ms":  162,
+                            "max_step_ms":  15
+                        },
+                        {
+                            "index":  2,
+                            "steps":  4,
+                            "elapsed_ms":  162,
+                            "max_step_ms":  14
+                        },
+                        {
+                            "index":  3,
+                            "steps":  4,
+                            "elapsed_ms":  162,
+                            "max_step_ms":  14
+                        },
+                        {
+                            "index":  4,
+                            "steps":  4,
+                            "elapsed_ms":  162,
+                            "max_step_ms":  14
+                        },
+                        {
+                            "index":  5,
+                            "steps":  4,
+                            "elapsed_ms":  162,
+                            "max_step_ms":  14
+                        },
+                        {
+                            "index":  6,
+                            "steps":  4,
+                            "elapsed_ms":  162,
+                            "max_step_ms":  14
+                        },
+                        {
+                            "index":  7,
+                            "steps":  4,
+                            "elapsed_ms":  162,
+                            "max_step_ms":  14
+                        },
+                        {
+                            "index":  8,
+                            "steps":  4,
+                            "elapsed_ms":  162,
+                            "max_step_ms":  14
+                        },
+                        {
+                            "index":  9,
+                            "steps":  4,
+                            "elapsed_ms":  162,
+                            "max_step_ms":  14
+                        },
+                        {
+                            "index":  10,
+                            "steps":  4,
+                            "elapsed_ms":  162,
+                            "max_step_ms":  14
+                        },
+                        {
+                            "index":  11,
+                            "steps":  4,
+                            "elapsed_ms":  162,
+                            "max_step_ms":  14
+                        },
+                        {
+                            "index":  12,
+                            "steps":  4,
+                            "elapsed_ms":  162,
+                            "max_step_ms":  14
+                        },
+                        {
+                            "index":  13,
+                            "steps":  4,
+                            "elapsed_ms":  162,
+                            "max_step_ms":  14
+                        },
+                        {
+                            "index":  14,
+                            "steps":  4,
+                            "elapsed_ms":  162,
+                            "max_step_ms":  15
+                        },
+                        {
+                            "index":  15,
+                            "steps":  4,
+                            "elapsed_ms":  162,
+                            "max_step_ms":  14
+                        },
+                        {
+                            "index":  16,
+                            "steps":  4,
+                            "elapsed_ms":  162,
+                            "max_step_ms":  14
+                        },
+                        {
+                            "index":  17,
+                            "steps":  4,
+                            "elapsed_ms":  162,
+                            "max_step_ms":  14
+                        },
+                        {
+                            "index":  18,
+                            "steps":  4,
+                            "elapsed_ms":  162,
+                            "max_step_ms":  15
+                        },
+                        {
+                            "index":  19,
+                            "steps":  4,
+                            "elapsed_ms":  162,
+                            "max_step_ms":  14
+                        },
+                        {
+                            "index":  20,
+                            "steps":  4,
+                            "elapsed_ms":  162,
+                            "max_step_ms":  14
+                        },
+                        {
+                            "index":  21,
+                            "steps":  4,
+                            "elapsed_ms":  162,
+                            "max_step_ms":  14
+                        },
+                        {
+                            "index":  22,
+                            "steps":  4,
+                            "elapsed_ms":  162,
+                            "max_step_ms":  14
+                        },
+                        {
+                            "index":  23,
+                            "steps":  4,
+                            "elapsed_ms":  162,
+                            "max_step_ms":  15
+                        },
+                        {
+                            "index":  24,
+                            "steps":  4,
+                            "elapsed_ms":  162,
+                            "max_step_ms":  14
+                        },
+                        {
+                            "index":  25,
+                            "steps":  4,
+                            "elapsed_ms":  162,
+                            "max_step_ms":  14
+                        },
+                        {
+                            "index":  26,
+                            "steps":  4,
+                            "elapsed_ms":  162,
+                            "max_step_ms":  14
+                        },
+                        {
+                            "index":  27,
+                            "steps":  4,
+                            "elapsed_ms":  162,
+                            "max_step_ms":  14
+                        },
+                        {
+                            "index":  28,
+                            "steps":  4,
+                            "elapsed_ms":  162,
+                            "max_step_ms":  14
+                        },
+                        {
+                            "index":  29,
+                            "steps":  4,
+                            "elapsed_ms":  162,
+                            "max_step_ms":  14
+                        }
+                    ],
+    "camera_scale":  0.48,
+    "target_anchor":  [
+                          64.0,
+                          146.0
+                      ],
+    "screen_y":  12,
+    "asset_pack_sha256":  "0ca8335edb380808f5256607eb2c217f530cb456beb0e3acce461e3d3d28dde6"
+}

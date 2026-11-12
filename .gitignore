@@ -1,0 +1,31 @@
+# Local credentials and environment
+secrets.h
+**/secrets.h
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Compiled firmware can contain WiFi passwords and API keys.
+.build/
+.build-*/
+build/
+*.elf
+*.map
+*.o
+*.bin
+
+# Rebuildable assets/caches; the offline ZIP explicitly includes selected assets.
+generated/
+assets/pc2005/
+__pycache__/
+*.pyc
+.venv/
+dist/
+*.zip
+*.zip.sha256
+PACKAGE_MANIFEST.json
+
+# Legacy generated RGB565 frame data (~15 MB, regenerable with legacy/rgb565 scripts).
+legacy/rgb565/whale_frames.h
