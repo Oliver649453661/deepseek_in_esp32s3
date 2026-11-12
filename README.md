@@ -10,6 +10,27 @@
 
 > 上图为同尺寸离线合成预览，余额数字仅作示意。人物以统一的大尺寸显示，部分大型道具与边缘特效会自然延伸到视窗外。
 
+## 快速开始
+
+**只想让桌宠跑起来 —— 不用装 Arduino 环境：**
+
+```powershell
+python -m pip install esptool
+cd prebuilt
+.\flash.ps1 -Port COM4
+```
+
+仓库里已经带好编译通过的固件、分区表和动画包，一条命令写完四个区域。固件使用占位符凭据，**动画与按键交互正常，余额显示不可用**；细节见 [prebuilt/README.md](prebuilt/README.md)。
+
+**想改代码 —— 从源码编译：**
+
+```powershell
+Copy-Item .\secrets.example.h .\secrets.h        # 填入自己的 WiFi 与 DeepSeek API Key
+powershell -NoProfile -ExecutionPolicy Bypass -File .\build.ps1 -Upload -Port COM4
+```
+
+需要先按「环境准备」装好 Arduino CLI、ESP32 支持包和依赖库。两条路都**不需要**安装 Python 图像依赖，也**不需要**联网重建素材 —— `generated/pet-assets.bin` 已在仓库内。
+
 ## 功能
 
 - **30 个完整动作**：开机先播舞狮头，之后洗牌轮播；每个动作 120 帧，完整时长约 10.04 秒。
@@ -56,12 +77,13 @@ deepseek_in_esp32s3/
 ├── pet_assets.h                   # 当前动画包的生成索引
 ├── build.ps1                     # 编译 / 一次性烧录程序与动画
 ├── verify_device.ps1             # 实机完整播放与过渡校验
+├── prebuilt/                     # 免编译固件与 flash.ps1，见 prebuilt/README.md
 ├── requirements-assets.txt       # 素材处理依赖
 ├── ASSET_LICENSE.txt             # 素材来源与授权
 ├── tools/
 │   ├── build_pet_assets.py        # 校验、转码、打包动画
 │   └── package_project.py        # 生成不含私密配置的本地整理包
-├── generated/                    # 离线包包含现成动画；Git 默认忽略
+├── generated/                    # 现成动画包，已入库（clone 后可直接烧录）
 │   ├── pet-assets.bin
 │   ├── asset-report.json
 │   └── action-contact-sheet.png
@@ -94,7 +116,7 @@ deepseek_in_esp32s3/
 
 构建脚本依次支持 `-Cli` 指定路径、`ARDUINO_CLI` 环境变量、PATH 中的 `arduino-cli`，以及常见 Arduino IDE 安装位置。找不到时传入实际路径即可。
 
-离线包已包含生成好的动画。**只编译和烧录时，不需要重新转码或安装 Python 图像依赖。** 修改动画时再执行：
+仓库和离线包都已包含生成好的动画（`generated/pet-assets.bin`）。**只编译和烧录时，不需要重新转码或安装 Python 图像依赖。** 修改动画时再执行：
 
 ```powershell
 python -m pip install -r .\requirements-assets.txt

@@ -8,6 +8,7 @@ secrets.h
 *.key
 
 # Compiled firmware can contain WiFi passwords and API keys.
+# Exception: prebuilt/ holds firmware compiled from secrets.example.h (placeholders only).
 .build/
 .build-*/
 build/
@@ -15,9 +16,13 @@ build/
 *.map
 *.o
 *.bin
+!prebuilt/*.bin
 
 # Rebuildable assets/caches; the offline ZIP explicitly includes selected assets.
-generated/
+# Exception: pet-assets.bin is tracked so a fresh clone can flash without rebuilding.
+generated/*
+!generated/pet-assets.bin
+!generated/asset-report.json
 assets/pc2005/
 __pycache__/
 *.pyc

@@ -25,8 +25,10 @@ if (!$Cli) {
     }
 }
 if (!$Cli -or !(Test-Path -LiteralPath $Cli)) { throw 'Arduino CLI not found. Add it to PATH, set ARDUINO_CLI, or pass -Cli with its absolute path.' }
-if (!(Test-Path -LiteralPath (Join-Path $PSScriptRoot 'secrets.h'))) {
-    throw 'Missing secrets.h. Copy secrets.example.h to secrets.h and fill in your local WiFi/API credentials.'
+$secrets = Join-Path $PSScriptRoot 'secrets.h'
+if (!(Test-Path -LiteralPath $secrets)) {
+    Copy-Item (Join-Path $PSScriptRoot 'secrets.example.h') $secrets
+    Write-Warning 'secrets.h created from secrets.example.h. Animations will run, but WiFi and the DeepSeek balance display stay disabled until you fill in real credentials.'
 }
 if ($RebuildAssets -or !(Test-Path -LiteralPath $assetPath) -or !(Test-Path -LiteralPath (Join-Path $PSScriptRoot 'pet_assets.h'))) {
     & $Python -X utf8 (Join-Path $PSScriptRoot 'tools\build_pet_assets.py') --quality 65

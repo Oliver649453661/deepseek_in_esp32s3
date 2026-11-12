@@ -1,0 +1,1112 @@
+{
+  "version": 8,
+  "revision": "7.1-fixed-camera",
+  "repository": "PC2005-cloud/dsh-pet",
+  "source_tree_sha": "33938a355f422525886c3facd883d7179c58ebf4",
+  "actions": [
+    {
+      "index": 0,
+      "id": "lion",
+      "name": "舞狮头",
+      "source_size": [
+        640,
+        360
+      ],
+      "source_fps": 24.0,
+      "source_content_bounds": [
+        201,
+        32,
+        444,
+        333
+      ],
+      "camera_scale": 0.48,
+      "source_anchor": [
+        320.0,
+        330.0
+      ],
+      "target_anchor": [
+        64.0,
+        146.0
+      ],
+      "source_window": [
+        186.66666666666666,
+        25.833333333333314,
+        453.33333333333337,
+        334.1666666666667
+      ],
+      "duration_ms": 10040,
+      "frames": 120,
+      "packed_bytes": 503145,
+      "mean_color_error": 5.458758709881757,
+      "source_sha": "b16d549ec2572f5d693bdc7691e3247544ccb88e"
+    },
+    {
+      "index": 1,
+      "id": "idle",
+      "name": "待机呼吸休闲",
+      "source_size": [
+        640,
+        360
+      ],
+      "source_fps": 24.0,
+      "source_content_bounds": [
+        195,
+        58,
+        437,
+        332
+      ],
+      "camera_scale": 0.48,
+      "source_anchor": [
+        320.0,
+        330.0
+      ],
+      "target_anchor": [
+        64.0,
+        146.0
+      ],
+      "source_window": [
+        186.66666666666666,
+        25.833333333333314,
+        453.33333333333337,
+        334.1666666666667
+      ],
+      "duration_ms": 10040,
+      "frames": 120,
+      "packed_bytes": 456946,
+      "mean_color_error": 4.953215764592717,
+      "source_sha": "fd64a428a2be1d3b4ff6cd7f9867dfe978ba0bbb"
+    },
+    {
+      "index": 2,
+      "id": "happy",
+      "name": "点击回应-开心跃动",
+      "source_size": [
+        640,
+        360
+      ],
+      "source_fps": 24.0,
+      "source_content_bounds": [
+        182,
+        16,
+        459,
+        334
+      ],
+      "camera_scale": 0.48,
+      "source_anchor": [
+        320.0,
+        330.0
+      ],
+      "target_anchor": [
+        64.0,
+        146.0
+      ],
+      "source_window": [
+        186.66666666666666,
+        25.833333333333314,
+        453.33333333333337,
+        334.1666666666667
+      ],
+      "duration_ms": 10040,
+      "frames": 120,
+      "packed_bytes": 481672,
+      "mean_color_error": 5.175032258821322,
+      "source_sha": "fb614abf8d19c650fb5bd4727b2585282733a996"
+    },
+    {
+      "index": 3,
+      "id": "sleep",
+      "name": "睡觉-循环",
+      "source_size": [
+        640,
+        360
+      ],
+      "source_fps": 24.0,
+      "source_content_bounds": [
+        132,
+        38,
+        428,
+        336
+      ],
+      "camera_scale": 0.48,
+      "source_anchor": [
+        320.0,
+        330.0
+      ],
+      "target_anchor": [
+        64.0,
+        146.0
+      ],
+      "source_window": [
+        186.66666666666666,
+        25.833333333333314,
+        453.33333333333337,
+        334.1666666666667
+      ],
+      "duration_ms": 10040,
+      "frames": 120,
+      "packed_bytes": 427393,
+      "mean_color_error": 4.422390261355105,
+      "source_sha": "e91b946423a17ba81f3d27727c8e9c6b4ec52ae0"
+    },
+    {
+      "index": 4,
+      "id": "alert",
+      "name": "被吓一跳",
+      "source_size": [
+        640,
+        360
+      ],
+      "source_fps": 24.0,
+      "source_content_bounds": [
+        205,
+        31,
+        434,
+        332
+      ],
+      "camera_scale": 0.48,
+      "source_anchor": [
+        320.0,
+        330.0
+      ],
+      "target_anchor": [
+        64.0,
+        146.0
+      ],
+      "source_window": [
+        186.66666666666666,
+        25.833333333333314,
+        453.33333333333337,
+        334.1666666666667
+      ],
+      "duration_ms": 10040,
+      "frames": 120,
+      "packed_bytes": 473984,
+      "mean_color_error": 5.075572154185435,
+      "source_sha": "a7afe71ed72990bbace7026abb1ef69ae7e3706c"
+    },
+    {
+      "index": 5,
+      "id": "cube",
+      "name": "原地专心玩魔方",
+      "source_size": [
+        640,
+        360
+      ],
+      "source_fps": 24.0,
+      "source_content_bounds": [
+        174,
+        64,
+        438,
+        338
+      ],
+      "camera_scale": 0.48,
+      "source_anchor": [
+        320.0,
+        330.0
+      ],
+      "target_anchor": [
+        64.0,
+        146.0
+      ],
+      "source_window": [
+        186.66666666666666,
+        25.833333333333314,
+        453.33333333333337,
+        334.1666666666667
+      ],
+      "duration_ms": 10040,
+      "frames": 120,
+      "packed_bytes": 463182,
+      "mean_color_error": 5.111641622090841,
+      "source_sha": "d2730f4c17e8ccb793973929c237b4fb32d8e3fc"
+    },
+    {
+      "index": 6,
+      "id": "hotpot",
+      "name": "涮火锅",
+      "source_size": [
+        640,
+        360
+      ],
+      "source_fps": 24.0,
+      "source_content_bounds": [
+        200,
+        61,
+        437,
+        352
+      ],
+      "camera_scale": 0.48,
+      "source_anchor": [
+        320.0,
+        330.0
+      ],
+      "target_anchor": [
+        64.0,
+        146.0
+      ],
+      "source_window": [
+        186.66666666666666,
+        25.833333333333314,
+        453.33333333333337,
+        334.1666666666667
+      ],
+      "duration_ms": 10040,
+      "frames": 120,
+      "packed_bytes": 475832,
+      "mean_color_error": 5.065786147475601,
+      "source_sha": "d3e99cf6d8694b5e83a3957793f8fc7a0fc2cc2a"
+    },
+    {
+      "index": 7,
+      "id": "blue_whale",
+      "name": "蓝鲸现世",
+      "source_size": [
+        640,
+        360
+      ],
+      "source_fps": 24.0,
+      "source_content_bounds": [
+        128,
+        35,
+        484,
+        332
+      ],
+      "camera_scale": 0.48,
+      "source_anchor": [
+        320.0,
+        330.0
+      ],
+      "target_anchor": [
+        64.0,
+        146.0
+      ],
+      "source_window": [
+        186.66666666666666,
+        25.833333333333314,
+        453.33333333333337,
+        334.1666666666667
+      ],
+      "duration_ms": 10040,
+      "frames": 120,
+      "packed_bytes": 464652,
+      "mean_color_error": 5.08603222362988,
+      "source_sha": "eb62a155d056d35a16b1d4e961d5ff10c109f684"
+    },
+    {
+      "index": 8,
+      "id": "otaku_dance",
+      "name": "可爱宅舞",
+      "source_size": [
+        640,
+        360
+      ],
+      "source_fps": 24.0,
+      "source_content_bounds": [
+        207,
+        55,
+        444,
+        333
+      ],
+      "camera_scale": 0.48,
+      "source_anchor": [
+        320.0,
+        330.0
+      ],
+      "target_anchor": [
+        64.0,
+        146.0
+      ],
+      "source_window": [
+        186.66666666666666,
+        25.833333333333314,
+        453.33333333333337,
+        334.1666666666667
+      ],
+      "duration_ms": 10040,
+      "frames": 120,
+      "packed_bytes": 463350,
+      "mean_color_error": 4.948252744932432,
+      "source_sha": "0b96ac0de6fa7afe72f256148dd719698769043c"
+    },
+    {
+      "index": 9,
+      "id": "maid_dance",
+      "name": "优雅女仆舞",
+      "source_size": [
+        640,
+        360
+      ],
+      "source_fps": 24.0,
+      "source_content_bounds": [
+        204,
+        52,
+        465,
+        334
+      ],
+      "camera_scale": 0.48,
+      "source_anchor": [
+        320.0,
+        330.0
+      ],
+      "target_anchor": [
+        64.0,
+        146.0
+      ],
+      "source_window": [
+        186.66666666666666,
+        25.833333333333314,
+        453.33333333333337,
+        334.1666666666667
+      ],
+      "duration_ms": 10040,
+      "frames": 120,
+      "packed_bytes": 445506,
+      "mean_color_error": 4.714651956644144,
+      "source_sha": "390c504dfb0b56bb647f0253782a91ee705f8933"
+    },
+    {
+      "index": 10,
+      "id": "swing_dance",
+      "name": "轻快摇摆舞",
+      "source_size": [
+        640,
+        360
+      ],
+      "source_fps": 24.0,
+      "source_content_bounds": [
+        194,
+        59,
+        472,
+        332
+      ],
+      "camera_scale": 0.48,
+      "source_anchor": [
+        320.0,
+        330.0
+      ],
+      "target_anchor": [
+        64.0,
+        146.0
+      ],
+      "source_window": [
+        186.66666666666666,
+        25.833333333333314,
+        453.33333333333337,
+        334.1666666666667
+      ],
+      "duration_ms": 10040,
+      "frames": 120,
+      "packed_bytes": 456623,
+      "mean_color_error": 4.904815508868243,
+      "source_sha": "596558b14cacee0d96f5e9d3942fd5731be49718"
+    },
+    {
+      "index": 11,
+      "id": "violin",
+      "name": "小提琴演奏",
+      "source_size": [
+        640,
+        360
+      ],
+      "source_fps": 24.0,
+      "source_content_bounds": [
+        136,
+        60,
+        470,
+        345
+      ],
+      "camera_scale": 0.48,
+      "source_anchor": [
+        320.0,
+        330.0
+      ],
+      "target_anchor": [
+        64.0,
+        146.0
+      ],
+      "source_window": [
+        186.66666666666666,
+        25.833333333333314,
+        453.33333333333337,
+        334.1666666666667
+      ],
+      "duration_ms": 10040,
+      "frames": 120,
+      "packed_bytes": 475480,
+      "mean_color_error": 5.100140032610736,
+      "source_sha": "2de1533cd0f2d7a72e0099f9ac6f816353f3912f"
+    },
+    {
+      "index": 12,
+      "id": "tail_drums",
+      "name": "用鲸鱼尾巴拍打地面",
+      "source_size": [
+        640,
+        360
+      ],
+      "source_fps": 24.0,
+      "source_content_bounds": [
+        206,
+        61,
+        470,
+        332
+      ],
+      "camera_scale": 0.48,
+      "source_anchor": [
+        320.0,
+        330.0
+      ],
+      "target_anchor": [
+        64.0,
+        146.0
+      ],
+      "source_window": [
+        186.66666666666666,
+        25.833333333333314,
+        453.33333333333337,
+        334.1666666666667
+      ],
+      "duration_ms": 10040,
+      "frames": 120,
+      "packed_bytes": 473673,
+      "mean_color_error": 5.136710245401651,
+      "source_sha": "822a7c41f795906ca46e2f1757c63e6633d39214"
+    },
+    {
+      "index": 13,
+      "id": "spin",
+      "name": "小幅度原地360度旋转展示",
+      "source_size": [
+        640,
+        360
+      ],
+      "source_fps": 24.0,
+      "source_content_bounds": [
+        189,
+        47,
+        468,
+        333
+      ],
+      "camera_scale": 0.48,
+      "source_anchor": [
+        320.0,
+        330.0
+      ],
+      "target_anchor": [
+        64.0,
+        146.0
+      ],
+      "source_window": [
+        186.66666666666666,
+        25.833333333333314,
+        453.33333333333337,
+        334.1666666666667
+      ],
+      "duration_ms": 10040,
+      "frames": 120,
+      "packed_bytes": 433230,
+      "mean_color_error": 4.591293344125376,
+      "source_sha": "915feb453f11f0267693109b3e847a850cdb1ec7"
+    },
+    {
+      "index": 14,
+      "id": "pet_cat",
+      "name": "撸猫",
+      "source_size": [
+        640,
+        360
+      ],
+      "source_fps": 24.0,
+      "source_content_bounds": [
+        209,
+        60,
+        433,
+        331
+      ],
+      "camera_scale": 0.48,
+      "source_anchor": [
+        320.0,
+        330.0
+      ],
+      "target_anchor": [
+        64.0,
+        146.0
+      ],
+      "source_window": [
+        186.66666666666666,
+        25.833333333333314,
+        453.33333333333337,
+        334.1666666666667
+      ],
+      "duration_ms": 10040,
+      "frames": 120,
+      "packed_bytes": 478267,
+      "mean_color_error": 5.246215453734985,
+      "source_sha": "466044675ea20b863db850373aab8a6c2b7c11a8"
+    },
+    {
+      "index": 15,
+      "id": "rocking_horse",
+      "name": "骑木马",
+      "source_size": [
+        640,
+        360
+      ],
+      "source_fps": 24.0,
+      "source_content_bounds": [
+        152,
+        15,
+        495,
+        360
+      ],
+      "camera_scale": 0.48,
+      "source_anchor": [
+        320.0,
+        330.0
+      ],
+      "target_anchor": [
+        64.0,
+        146.0
+      ],
+      "source_window": [
+        186.66666666666666,
+        25.833333333333314,
+        453.33333333333337,
+        334.1666666666667
+      ],
+      "duration_ms": 10040,
+      "frames": 120,
+      "packed_bytes": 525670,
+      "mean_color_error": 5.771235542182808,
+      "source_sha": "b578f4c951a11c3fe97bdbd609315d3e72fe6827"
+    },
+    {
+      "index": 16,
+      "id": "swing",
+      "name": "荡秋千",
+      "source_size": [
+        640,
+        360
+      ],
+      "source_fps": 24.0,
+      "source_content_bounds": [
+        188,
+        16,
+        478,
+        338
+      ],
+      "camera_scale": 0.48,
+      "source_anchor": [
+        320.0,
+        330.0
+      ],
+      "target_anchor": [
+        64.0,
+        146.0
+      ],
+      "source_window": [
+        186.66666666666666,
+        25.833333333333314,
+        453.33333333333337,
+        334.1666666666667
+      ],
+      "duration_ms": 10040,
+      "frames": 120,
+      "packed_bytes": 484697,
+      "mean_color_error": 5.283088606184309,
+      "source_sha": "41c61429405139344b13875135468edb25b6f28e"
+    },
+    {
+      "index": 17,
+      "id": "shuttlecock",
+      "name": "踢毽子",
+      "source_size": [
+        640,
+        360
+      ],
+      "source_fps": 24.0,
+      "source_content_bounds": [
+        192,
+        28,
+        450,
+        333
+      ],
+      "camera_scale": 0.48,
+      "source_anchor": [
+        320.0,
+        330.0
+      ],
+      "target_anchor": [
+        64.0,
+        146.0
+      ],
+      "source_window": [
+        186.66666666666666,
+        25.833333333333314,
+        453.33333333333337,
+        334.1666666666667
+      ],
+      "duration_ms": 10040,
+      "frames": 120,
+      "packed_bytes": 466571,
+      "mean_color_error": 5.082803408877627,
+      "source_sha": "1a0586564e58e6a60e4f151d2bf161e975673e30"
+    },
+    {
+      "index": 18,
+      "id": "juggling",
+      "name": "三球抛接",
+      "source_size": [
+        640,
+        360
+      ],
+      "source_fps": 24.0,
+      "source_content_bounds": [
+        208,
+        36,
+        436,
+        332
+      ],
+      "camera_scale": 0.48,
+      "source_anchor": [
+        320.0,
+        330.0
+      ],
+      "target_anchor": [
+        64.0,
+        146.0
+      ],
+      "source_window": [
+        186.66666666666666,
+        25.833333333333314,
+        453.33333333333337,
+        334.1666666666667
+      ],
+      "duration_ms": 10040,
+      "frames": 120,
+      "packed_bytes": 475004,
+      "mean_color_error": 5.196285689986862,
+      "source_sha": "a76228cb5f42fa159e3ec565b8ef969a7d289dca"
+    },
+    {
+      "index": 19,
+      "id": "card_magic",
+      "name": "扑克魔术",
+      "source_size": [
+        640,
+        360
+      ],
+      "source_fps": 24.0,
+      "source_content_bounds": [
+        178,
+        60,
+        437,
+        331
+      ],
+      "camera_scale": 0.48,
+      "source_anchor": [
+        320.0,
+        330.0
+      ],
+      "target_anchor": [
+        64.0,
+        146.0
+      ],
+      "source_window": [
+        186.66666666666666,
+        25.833333333333314,
+        453.33333333333337,
+        334.1666666666667
+      ],
+      "duration_ms": 10040,
+      "frames": 120,
+      "packed_bytes": 476775,
+      "mean_color_error": 5.075279625328453,
+      "source_sha": "2e33efead726dff587fa0ca46adef5ecb5d0b7c9"
+    },
+    {
+      "index": 20,
+      "id": "gaming",
+      "name": "玩游戏气急败坏",
+      "source_size": [
+        640,
+        360
+      ],
+      "source_fps": 24.0,
+      "source_content_bounds": [
+        167,
+        56,
+        450,
+        344
+      ],
+      "camera_scale": 0.48,
+      "source_anchor": [
+        320.0,
+        330.0
+      ],
+      "target_anchor": [
+        64.0,
+        146.0
+      ],
+      "source_window": [
+        186.66666666666666,
+        25.833333333333314,
+        453.33333333333337,
+        334.1666666666667
+      ],
+      "duration_ms": 10040,
+      "frames": 120,
+      "packed_bytes": 498206,
+      "mean_color_error": 5.327538622606982,
+      "source_sha": "a3375c2980634529e84ba2ee61a57776ea8205e9"
+    },
+    {
+      "index": 21,
+      "id": "sneak_snack",
+      "name": "偷吃零食被抓住",
+      "source_size": [
+        640,
+        360
+      ],
+      "source_fps": 24.0,
+      "source_content_bounds": [
+        207,
+        28,
+        439,
+        332
+      ],
+      "camera_scale": 0.48,
+      "source_anchor": [
+        320.0,
+        330.0
+      ],
+      "target_anchor": [
+        64.0,
+        146.0
+      ],
+      "source_window": [
+        186.66666666666666,
+        25.833333333333314,
+        453.33333333333337,
+        334.1666666666667
+      ],
+      "duration_ms": 10040,
+      "frames": 120,
+      "packed_bytes": 476810,
+      "mean_color_error": 5.150595761777402,
+      "source_sha": "9f50ed6c3ba1a3f96b614e34ecaaf067ef6ab9cd"
+    },
+    {
+      "index": 22,
+      "id": "watermelon",
+      "name": "吃西瓜",
+      "source_size": [
+        640,
+        360
+      ],
+      "source_fps": 24.0,
+      "source_content_bounds": [
+        205,
+        60,
+        437,
+        333
+      ],
+      "camera_scale": 0.48,
+      "source_anchor": [
+        320.0,
+        330.0
+      ],
+      "target_anchor": [
+        64.0,
+        146.0
+      ],
+      "source_window": [
+        186.66666666666666,
+        25.833333333333314,
+        453.33333333333337,
+        334.1666666666667
+      ],
+      "duration_ms": 10040,
+      "frames": 120,
+      "packed_bytes": 475703,
+      "mean_color_error": 5.179188807948574,
+      "source_sha": "ffa2c36e86e9056a7e965c73364a50c1fd8bb192"
+    },
+    {
+      "index": 23,
+      "id": "ghost",
+      "name": "萌化小幽灵",
+      "source_size": [
+        640,
+        360
+      ],
+      "source_fps": 24.0,
+      "source_content_bounds": [
+        160,
+        47,
+        483,
+        340
+      ],
+      "camera_scale": 0.48,
+      "source_anchor": [
+        320.0,
+        330.0
+      ],
+      "target_anchor": [
+        64.0,
+        146.0
+      ],
+      "source_window": [
+        186.66666666666666,
+        25.833333333333314,
+        453.33333333333337,
+        334.1666666666667
+      ],
+      "duration_ms": 10040,
+      "frames": 120,
+      "packed_bytes": 454418,
+      "mean_color_error": 4.812078142595721,
+      "source_sha": "cae5ebbca8634591a49daf5f7a4bc56fa369a7bf"
+    },
+    {
+      "index": 24,
+      "id": "gift",
+      "name": "拆礼物",
+      "source_size": [
+        640,
+        360
+      ],
+      "source_fps": 24.0,
+      "source_content_bounds": [
+        157,
+        44,
+        470,
+        340
+      ],
+      "camera_scale": 0.48,
+      "source_anchor": [
+        320.0,
+        330.0
+      ],
+      "target_anchor": [
+        64.0,
+        146.0
+      ],
+      "source_window": [
+        186.66666666666666,
+        25.833333333333314,
+        453.33333333333337,
+        334.1666666666667
+      ],
+      "duration_ms": 10040,
+      "frames": 120,
+      "packed_bytes": 457872,
+      "mean_color_error": 4.94703541432057,
+      "source_sha": "01445f708db3e19b707e6d1609902dd4da9c0ade"
+    },
+    {
+      "index": 25,
+      "id": "pumpkin",
+      "name": "讨糖南瓜灯",
+      "source_size": [
+        640,
+        360
+      ],
+      "source_fps": 24.0,
+      "source_content_bounds": [
+        200,
+        60,
+        447,
+        334
+      ],
+      "camera_scale": 0.48,
+      "source_anchor": [
+        320.0,
+        330.0
+      ],
+      "target_anchor": [
+        64.0,
+        146.0
+      ],
+      "source_window": [
+        186.66666666666666,
+        25.833333333333314,
+        453.33333333333337,
+        334.1666666666667
+      ],
+      "duration_ms": 10040,
+      "frames": 120,
+      "packed_bytes": 460925,
+      "mean_color_error": 5.007929804804805,
+      "source_sha": "3a17ac14fba449e8d7bb0e0d38085825b068a9e1"
+    },
+    {
+      "index": 26,
+      "id": "snowman",
+      "name": "堆雪人",
+      "source_size": [
+        640,
+        360
+      ],
+      "source_fps": 24.0,
+      "source_content_bounds": [
+        197,
+        62,
+        487,
+        344
+      ],
+      "camera_scale": 0.48,
+      "source_anchor": [
+        320.0,
+        330.0
+      ],
+      "target_anchor": [
+        64.0,
+        146.0
+      ],
+      "source_window": [
+        186.66666666666666,
+        25.833333333333314,
+        453.33333333333337,
+        334.1666666666667
+      ],
+      "duration_ms": 10040,
+      "frames": 120,
+      "packed_bytes": 450932,
+      "mean_color_error": 4.713797537772147,
+      "source_sha": "ce8e8be3b7e5c0dfbdebf15f5a8fd70e2836ee0f"
+    },
+    {
+      "index": 27,
+      "id": "red_envelope",
+      "name": "收红包",
+      "source_size": [
+        640,
+        360
+      ],
+      "source_fps": 24.0,
+      "source_content_bounds": [
+        207,
+        63,
+        440,
+        331
+      ],
+      "camera_scale": 0.48,
+      "source_anchor": [
+        320.0,
+        330.0
+      ],
+      "target_anchor": [
+        64.0,
+        146.0
+      ],
+      "source_window": [
+        186.66666666666666,
+        25.833333333333314,
+        453.33333333333337,
+        334.1666666666667
+      ],
+      "duration_ms": 10040,
+      "frames": 120,
+      "packed_bytes": 450323,
+      "mean_color_error": 4.900171558277027,
+      "source_sha": "ca07f8792572e3b182b2077b768fbcf9ece4ee91"
+    },
+    {
+      "index": 28,
+      "id": "ice_cream",
+      "name": "吃冰淇淋融化",
+      "source_size": [
+        640,
+        360
+      ],
+      "source_fps": 24.0,
+      "source_content_bounds": [
+        207,
+        59,
+        432,
+        336
+      ],
+      "camera_scale": 0.48,
+      "source_anchor": [
+        320.0,
+        330.0
+      ],
+      "target_anchor": [
+        64.0,
+        146.0
+      ],
+      "source_window": [
+        186.66666666666666,
+        25.833333333333314,
+        453.33333333333337,
+        334.1666666666667
+      ],
+      "duration_ms": 10040,
+      "frames": 120,
+      "packed_bytes": 472541,
+      "mean_color_error": 5.092161986204955,
+      "source_sha": "c696cf2f61366cd9ba973aae1526dbf920c3d85d"
+    },
+    {
+      "index": 29,
+      "id": "fan",
+      "name": "摇扇纳凉",
+      "source_size": [
+        640,
+        360
+      ],
+      "source_fps": 24.0,
+      "source_content_bounds": [
+        152,
+        52,
+        472,
+        338
+      ],
+      "camera_scale": 0.48,
+      "source_anchor": [
+        320.0,
+        330.0
+      ],
+      "target_anchor": [
+        64.0,
+        146.0
+      ],
+      "source_window": [
+        186.66666666666666,
+        25.833333333333314,
+        453.33333333333337,
+        334.1666666666667
+      ],
+      "duration_ms": 10040,
+      "frames": 120,
+      "packed_bytes": 474758,
+      "mean_color_error": 5.171292288382133,
+      "source_sha": "bbb9b8344e6c30579c967a27831ad85f19db1002"
+    }
+  ],
+  "action_count": 30,
+  "frame_count": 3600,
+  "fps": 12,
+  "width": 128,
+  "height": 148,
+  "screen_y": 12,
+  "quality": 65,
+  "camera_scale": 0.48,
+  "source_anchor": [
+    320.0,
+    330.0
+  ],
+  "target_anchor": [
+    64.0,
+    146.0
+  ],
+  "pack_bytes": 14074204,
+  "pack_limit": 14548992,
+  "pack_crc32": "adaa6ea9",
+  "pack_sha256": "0ca8335edb380808f5256607eb2c217f530cb456beb0e3acce461e3d3d28dde6",
+  "max_jpeg_bytes": 5103,
+  "jpeg_prefix_bytes": 177,
+  "shared_prefix_saved_bytes": 637023,
+  "validation": "all JPEGs decoded; all CRCs, offsets and complete durations verified"
+}
