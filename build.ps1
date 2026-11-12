@@ -35,10 +35,26 @@ if ($RebuildAssets -or !(Test-Path -LiteralPath $assetPath) -or !(Test-Path -Lit
     if ($LASTEXITCODE -ne 0) { throw "Asset build failed: $LASTEXITCODE" }
 }
 if ((Get-Item -LiteralPath $assetPath).Length -gt 14548992) { throw 'Animation pack exceeds its Flash partition' }
-& $Cli compile --fqbn $fqbn --build-property 'upload.maximum_size=2097152' --build-path $buildPath $PSScriptRoot
+
+# Arduino requires the sketch folder to be named after the main .ino. A ZIP
+# download arrives as "deepseek_in_esp32s3-main", so stage a correctly named
+# copy instead of making the user rename their folder.
+$sketchName = 'deepseek_in_esp32s3'
+$sketchDir = $PSScriptRoot
+if ((Split-Path -Leaf $PSScriptRoot) -ne $sketchName) {
+    $sketchDir = Join-Path (Join-Path ([System.IO.Path]::GetTempPath()) 'deepseek_in_esp32s3_stage') $sketchName
+    if (Test-Path -LiteralPath $sketchDir) { Remove-Item -LiteralPath $sketchDir -Recurse -Force }
+    New-Item -ItemType Directory -Path $sketchDir -Force | Out-Null
+    Copy-Item -Path (Join-Path $PSScriptRoot '*.ino') -Destination $sketchDir -Force
+    Copy-Item -Path (Join-Path $PSScriptRoot '*.h') -Destination $sketchDir -Force
+    Copy-Item -Path (Join-Path $PSScriptRoot 'partitions.csv') -Destination $sketchDir -Force
+    Write-Host "Sketch folder is '$((Split-Path -Leaf $PSScriptRoot))'; staged a copy at $sketchDir for the compiler."
+}
+
+& $Cli compile --fqbn $fqbn --build-property 'upload.maximum_size=2097152' --build-path $buildPath $sketchDir
 if ($LASTEXITCODE -ne 0) { throw "Compile failed: $LASTEXITCODE" }
 if ($Upload) {
     # Upload firmware, partition table and animations in one esptool transaction/reset.
-    & $Cli upload --port $Port --fqbn $fqbn --input-dir $buildPath --upload-property "upload.extra_flags=0x210000 `"$assetPath`"" $PSScriptRoot
+    & $Cli upload --port $Port --fqbn $fqbn --input-dir $buildPath --upload-property "upload.extra_flags=0x210000 `"$assetPath`"" $sketchDir
     if ($LASTEXITCODE -ne 0) { throw "Upload failed: $LASTEXITCODE" }
 }

@@ -15,6 +15,7 @@ $here = $PSScriptRoot
 $targets = [ordered]@{
     '0x0'      = Join-Path $here 'bootloader.bin'
     '0x8000'   = Join-Path $here 'partitions.bin'
+    '0xe000'   = Join-Path $here 'boot_app0.bin'
     '0x10000'  = Join-Path $here 'firmware.bin'
     '0x210000' = Join-Path (Join-Path $here '..\generated') 'pet-assets.bin'
 }
@@ -39,19 +40,34 @@ else {
     $prefix = @('-m', 'esptool')
 }
 
+# esptool and python write progress to stderr; keep that from terminating the script.
+$ErrorActionPreference = 'Continue'
+
+$versionText = (& $exe @prefix version 2>&1 | Out-String)
+if ($LASTEXITCODE -ne 0) {
+    $ErrorActionPreference = 'Stop'
+    throw "esptool is not installed for '$exe'. Install it with: python -m pip install esptool"
+}
+
+# esptool 5.x renamed write_flash to write-flash (the old name only warns).
+$writeVerb = 'write_flash'
+if ($versionText -match 'v(\d+)\.' -and [int]$Matches[1] -ge 5) { $writeVerb = 'write-flash' }
+
 $arguments = @()
 $arguments += $prefix
-$arguments += @('--chip', 'esp32s3', '--port', $Port, '--baud', $Baud, 'write_flash')
+$arguments += @('--chip', 'esp32s3', '--port', $Port, '--baud', $Baud, $writeVerb)
 foreach ($entry in $targets.GetEnumerator()) {
     $arguments += $entry.Key
     $arguments += $entry.Value
 }
 
-Write-Host "Flashing prebuilt v7.1 to $Port (16MB flash layout)..." -ForegroundColor Cyan
+Write-Host "Flashing prebuilt v7.1 to $Port (16MB flash layout, $writeVerb)..." -ForegroundColor Cyan
 & $exe @arguments
 if ($LASTEXITCODE -ne 0) {
+    $ErrorActionPreference = 'Stop'
     throw "esptool failed with exit code $LASTEXITCODE. If connecting fails, retry with -Baud 115200."
 }
 
+$ErrorActionPreference = 'Stop'
 Write-Host 'Done. The device reboots and starts playing the whale-girl animations.' -ForegroundColor Green
 Write-Host 'Balance display stays off until you build with your own secrets.h.' -ForegroundColor Yellow

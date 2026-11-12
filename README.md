@@ -20,7 +20,7 @@ cd prebuilt
 .\flash.ps1 -Port COM4
 ```
 
-仓库里已经带好编译通过的固件、分区表和动画包，一条命令写完四个区域。固件使用占位符凭据，**动画与按键交互正常，余额显示不可用**；细节见 [prebuilt/README.md](prebuilt/README.md)。
+仓库里已经带好编译通过的固件、分区表、OTA 初始化数据和动画包，一条命令写完五个区域。固件使用占位符凭据，**动画与按键交互正常，余额显示不可用**；细节见 [prebuilt/README.md](prebuilt/README.md)。
 
 **想改代码 —— 从源码编译：**
 
@@ -94,7 +94,7 @@ deepseek_in_esp32s3/
 └── legacy/rgb565/                # 旧版转换脚本、头文件与 PNG/GIF 素材
 ```
 
-实际开发工程可位于其他目录；Arduino 主 `.ino` 文件名必须与所在文件夹名称一致。整理包会使用 `deepseek_in_esp32s3.ino`，与顶层文件夹同名。如果以后下载的仓库目录带 `-main` 后缀，编译前请改回 `deepseek_in_esp32s3`。
+实际开发工程可位于其他目录；Arduino 主 `.ino` 文件名必须与所在文件夹名称一致。整理包会使用 `deepseek_in_esp32s3.ino`，与顶层文件夹同名。从 GitHub 下载的 ZIP 目录带 `-main` 后缀，`build.ps1` 会自动复制到临时目录按正确名称编译，**无需手动改名**。
 
 ## 环境准备
 
@@ -281,7 +281,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\verify_device.ps1 -Port CO
 |---|---|
 | 找不到 `arduino-cli` | 使用 `-Cli`，或设置 `ARDUINO_CLI` / PATH |
 | 提示缺少 `secrets.h` | 从 `secrets.example.h` 复制并在本机填写 |
-| 找不到同名 `.ino` | 主文件与文件夹名称必须一致 |
+| 找不到同名 `.ino` | 文件夹名与主文件不同名；`build.ps1` 会自动暂存到临时目录，用 `-Cli` 显式调用时也一样 |
 | `assets not ready` | 固件、`pet_assets.h`、动画包和分区表是否为同一版本；用 `build.ps1 -Upload` 一起烧录 |
 | 固件装不下 | 核对 FlashSize=16M、自定义分区与 2MB 程序上限；不要改回旧的 huge_app 配置 |
 | 串口无法打开 | 重新枚举端口，关闭 Arduino 串口监视器等占用程序 |

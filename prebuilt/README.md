@@ -31,6 +31,7 @@ cd prebuilt
 |---|---|---|---|
 | `bootloader.bin` | `0x0` | 19.6 KB | 二级引导 |
 | `partitions.bin` | `0x8000` | 3.0 KB | 分区表（必须与固件配套） |
+| `boot_app0.bin` | `0xe000` | 8.0 KB | OTA 数据初始化，与 Arduino 官方烧录配方一致 |
 | `firmware.bin` | `0x10000` | 1,103.2 KB | 应用程序 |
 | `../generated/pet-assets.bin` | `0x210000` | 13,744.3 KB | 30 动作动画包 |
 
@@ -54,6 +55,7 @@ cd prebuilt
 ```
 a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e  prebuilt/bootloader.bin
 a520d9347946bcbbf891e0171f34939f66a55bad1ed7bf6334fb2e69c8cbeeb5  prebuilt/partitions.bin
+f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0  prebuilt/boot_app0.bin
 8e72e3b358ba9daf813016831a600cc23eda08e40ae6521a288f8acfac3e1a1e  prebuilt/firmware.bin
 0ca8335edb380808f5256607eb2c217f530cb456beb0e3acce461e3d3d28dde6  generated/pet-assets.bin
 ```
