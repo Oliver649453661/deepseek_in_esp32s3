@@ -60,8 +60,10 @@ try {
     }
     if (!$done) { throw 'Timed out before all 30 complete actions were verified' }
     if (!$balanceSeen) { throw 'All animations passed, but balance display was never ready' }
-    [PSCustomObject]@{ port=$Port; revision='7.1-fixed-camera'; result='PASS'; actions=$cycles.Count; rendered_frames=($cycles.ToArray() | Measure-Object -Property rendered -Sum).Sum; balance_ready=$balanceSeen; cycles=$cycles.ToArray(); transitions=$transitions.ToArray(); camera_scale=$expected.camera_scale; target_anchor=$expected.target_anchor; screen_y=$expected.screen_y; asset_pack_sha256=$expected.pack_sha256 } |
-        ConvertTo-Json -Depth 5 | Set-Content -LiteralPath (Join-Path $logDir 'device-validation-v7_1.json') -Encoding UTF8
+    $record = [PSCustomObject]@{ port=$Port; revision='7.1-fixed-camera'; result='PASS'; actions=$cycles.Count; rendered_frames=($cycles.ToArray() | Measure-Object -Property rendered -Sum).Sum; balance_ready=$balanceSeen; cycles=$cycles.ToArray(); transitions=$transitions.ToArray(); camera_scale=$expected.camera_scale; target_anchor=$expected.target_anchor; screen_y=$expected.screen_y; asset_pack_sha256=$expected.pack_sha256 } |
+        ConvertTo-Json -Depth 5
+    # Write without a BOM so the record stays parseable by any strict JSON reader.
+    [System.IO.File]::WriteAllText((Join-Path $logDir 'device-validation-v7_1.json'), $record, [System.Text.UTF8Encoding]::new($false))
     Write-Output 'PASS: 30 actions, 3600 frames, 30 smooth transitions, 0 CRC/JPEG errors, balance ready.'
 } finally {
     if ($devicePort.IsOpen) { $devicePort.Close() }
